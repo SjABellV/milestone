@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Home</title>
+</head>
+
+<body>
+
+<header>
+
+    <h1>Passion of the Lyricist</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About & Contact</a></li>
+            </ul>
+        </nav>
+</header>
+
+<main>
+
+<section>
+    <h2>Welcome</h2>
+    <p>Placeholder introduction about myself and my company's mission statement.</p>
+</section>
+
+<section>
+    <h2>Featured Items</h2>
+
+    <article>
+        <h3>Portfolio Website</h3>
+        <p>A responsive portfolio website created with HTML and CSS to showcase my projects and technical skills.</p>
+    </article>
+
+    <article>
+        <h3>Cybersecurity Project</h3>
+        <p>A project focused on cybersecurity concepts, including protecting information and identifying potential security risks.</p>
+    </article>
+
+    <article>
+        <h3>Web Development Project</h3>
+        <p>A web development project demonstrating HTML structure, CSS styling, responsive design, and accessibility practices.</p>
+    </article>
+
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Passion of the Lyricist</p>
+</footer>
+
+</body>
