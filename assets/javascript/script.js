@@ -1,3 +1,23 @@
+// ---------- Show/Hide About Section ----------
+
+const aboutButton = document.querySelector("#about-button");
+const moreAbout = document.querySelector("#more-about");
+
+aboutButton.addEventListener("click", function () {
+
+    if (moreAbout.hidden === true) {
+        moreAbout.hidden = false;
+        aboutButton.textContent = "Show Less";
+        aboutButton.setAttribute("aria-expanded", "true");
+    } else {
+        moreAbout.hidden = true;
+        aboutButton.textContent = "Show More";
+        aboutButton.setAttribute("aria-expanded", "false");
+    }
+
+});
+
+
 // ---------- Contact Form Validation ----------
 
 const contactForm = document.querySelector("#contact-form");
@@ -20,7 +40,6 @@ contactForm.addEventListener("submit", function (event) {
     let formIsValid = true;
 
 
-    // Check name
     if (nameInput.value.trim() === "") {
         nameError.textContent = "Please enter your name.";
         nameInput.setAttribute("aria-invalid", "true");
@@ -28,7 +47,6 @@ contactForm.addEventListener("submit", function (event) {
     }
 
 
-    // Check email
     if (emailInput.value.trim() === "") {
         emailError.textContent = "Please enter your email.";
         emailInput.setAttribute("aria-invalid", "true");
@@ -36,7 +54,6 @@ contactForm.addEventListener("submit", function (event) {
     }
 
 
-    // Check message
     if (messageInput.value.trim() === "") {
         messageError.textContent = "Please enter a message.";
         messageInput.setAttribute("aria-invalid", "true");
@@ -44,7 +61,6 @@ contactForm.addEventListener("submit", function (event) {
     }
 
 
-    // If everything is filled out
     if (formIsValid === true) {
         formSuccess.textContent =
             "Thank you! Your form was completed successfully.";
@@ -53,6 +69,7 @@ contactForm.addEventListener("submit", function (event) {
     }
 
 });
+
 
 // ---------- Clear Errors ----------
 
