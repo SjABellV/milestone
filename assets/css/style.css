@@ -148,3 +148,78 @@ footer {
         font-size: 15px;
     }
 }
+
+/* ---------- Form ---------- */
+
+form {
+    margin-top: 24px;
+}
+
+fieldset {
+    border: 2px solid #4f86c6;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #4f86c6;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid #ffd166;
+    outline-offset: 2px;
+}
+
+.error-message {
+    margin-top: 8px;
+    color: #b00020;
+    font-weight: bold;
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+    border-color: #b00020;
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00509e;
+}
+
+#form-success {
+    margin-top: 16px;
+    font-weight: bold;
+}
