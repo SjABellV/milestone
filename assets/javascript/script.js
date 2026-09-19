@@ -63,7 +63,7 @@ contactForm.addEventListener("submit", function (event) {
 
     if (formIsValid === true) {
         formSuccess.textContent =
-            "Thank you! Your form was completed successfully.";
+            "Validation successful! This is a demo form and does not send messages.";
 
         contactForm.reset();
     }
